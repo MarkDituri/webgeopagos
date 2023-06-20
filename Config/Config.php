@@ -1,7 +1,7 @@
 <?php 
 	//LOCAL	
-	const BASE_URL = "http://localhost/Qudimar-Fusion-Features-mirage";
-	const WEB_URL = "http://localhost/Qudimar-Fusion-Features-mirage";
+	const BASE_URL = "http://localhost/geopagos";
+	const WEB_URL = "http://localhost/geopagos";
 
 	const DB_HOST = "localhost";
 	const DB_NAME = "db_qudimar_local";
