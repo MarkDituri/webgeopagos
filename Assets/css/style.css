@@ -7834,7 +7834,7 @@ div[class*="col"]:nth-of-type(3n + 3) .statistics-item::after {
   display: block;
 }
 .faq-wrapper .faq-item.open {
-  border: 3px solid #8f2df5;
+  border: 1px solid #8f2df5;
 }
 .faq-wrapper .faq-item.open .right-icon::after {
   border-top: 2px solid #8f2df5;

@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/Assets/css/flipclock.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="<?= base_url(); ?>/Assets/css/style.css">
+    <!-- start style css link -->
+    <link rel="stylesheet" href="<?= base_url(); ?>/Assets/css/start.css">
 </head>
 <body>
 

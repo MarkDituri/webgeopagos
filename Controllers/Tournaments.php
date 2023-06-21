@@ -56,6 +56,35 @@ class Tournaments extends Controllers
 		}
 	}
 
+	public function cups()
+	{
+		$data['page_tag'] = NOMBRE_EMPESA;
+		$data['page_title'] = NOMBRE_EMPESA;
+		$data['page_name'] = "Copas";		
+		
+		// Consulta a la API
+		$url = 'http://127.0.0.1:8000/api/v2/tournaments/';			
+		$json = file_get_contents($url);
+		$data = json_decode($json, true);
+		
+		$this->views->getView($this, "cups", $data);
+	}
+
+	public function start($gender)
+	{
+		$data['page_tag'] = NOMBRE_EMPESA;
+		$data['page_title'] = NOMBRE_EMPESA;
+		$data['page_name'] = "Start ";		
+		
+		// Consulta a la API
+		$url = 'http://127.0.0.1:8000/api/v2/start/'.$gender;			
+		$json = file_get_contents($url);
+		$data = json_decode($json, true);
+				
+		$this->views->getView($this, "start", $data);
+	}
+
+
 	public function id($params)
 	{
 		if (empty($params)) {

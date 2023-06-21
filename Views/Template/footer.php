@@ -21,9 +21,9 @@
                 <div class="footer-widget">
                     <h4 class="title">Mapa del sitio</h4>
                     <ul class="footer-list">
-                        <li><a href="players">Jugadores</a></li>
-                        <li><a href="torneos">Torneos</a></li>
-                        <li><a href="start">Start</a></li>                        
+                        <li><a href="<?= base_url(); ?>/tournaments/players">Jugadores</a></li>
+                        <li><a href="<?= base_url(); ?>/tournaments/cups">Torneos</a></li>
+                        <li><a href="<?= base_url(); ?>/tournaments/cups">Start</a></li>                        
                     </ul>
                 </div>
             </div>

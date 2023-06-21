@@ -1,0 +1,174 @@
+.playoff-table *{
+    box-sizing: border-box;
+  }
+  .playoff-table {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    font-weight: 400;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #f5f5f5;
+  }
+  .playoff-table .playoff-table-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    padding: 20px;
+  }
+  .playoff-table .playoff-table-tour {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    position: relative;
+  }
+  .playoff-table .playoff-table-pair {
+    position: relative;
+  }
+  .playoff-table .playoff-table-pair:nth-child(even):after {
+    top: 28px;
+  }
+  .playoff-table .playoff-table-pair:nth-child(odd):after {
+    bottom: 28px;
+  }
+  .playoff-table .playoff-table-pair-style {
+    border: none;    
+    width: 230px;
+    margin-bottom: 20px;
+  }
+  .playoff-table .playoff-table-group {
+    padding-right: 11px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+  }
+  .playoff-table .playoff-table-group .playoff-table-pair-style:last-child {
+    margin-bottom: 0px;
+  }
+
+  .event-section{
+    height: 1154px;
+  }
+  .playoff-table .playoff-table-group:last-child {
+    margin-bottom: 0;
+  }
+  .playoff-table .playoff-table-left-player,
+  .playoff-table .playoff-table-right-player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 26px;
+    padding: 0;        
+  }
+
+  .playoff-table .playoff-table-right-player {
+    margin-top: -1px;
+    border-top: 1px solid #cccccc;
+  }
+  .playoff-table .playoff-table-third-place {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 100px;
+  }
+  .playoff-table .playoff-table-third-place .playoff-table-left-player:before {
+    display: none;
+  }
+  .playoff-table .playoff-table-tour:first-child .playoff-table-group {
+    padding-left: 0;
+  }
+  .playoff-table .playoff-table-tour:first-child .playoff-table-left-player:before {
+    display: none;
+  }
+  .playoff-table .playoff-table-tour:last-child .playoff-table-group:after {
+    display: none;
+  }
+  .playoff-table .playoff-table-tour:last-child .playoff-table-pair:after,
+  .playoff-table .playoff-table-tour:last-child .playoff-table-pair:before {
+    display: none;
+  }
+  /*# sourceMappingURL=playoff-table.css.map */
+  .playoff-table .winner{
+    background-color: rgb(248, 255, 248)
+  }
+.playoff-player-name{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+.playoff-player-lastname{
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.playoff-player-win{
+    color: #fff;
+    font-size: 12px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.faq-wrapper .faq-item{
+    width: 100%;
+    padding: 9px 15px;
+    margin-bottom: 29px;
+    border: none!important;
+}
+.faq-wrapper .faq-item .faq-content{
+    padding-top: 5px;
+}
+.skills label{
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.faq-content a{
+    width: 100%;
+    margin-top: 6px;
+    font-size: 12px;
+    border: 1px solid #8f2df5;
+    color: #8f2df5;
+    border-radius: 11px;
+}
+.progress-total{
+    margin-top: 4px;
+    height: 6px;
+    background-color: #ebebeb;
+    width: 100%;    
+    margin-bottom: 8px;
+}
+
+.progress-var{    
+    height: 6px;
+    background-color: #8f2df5;
+}

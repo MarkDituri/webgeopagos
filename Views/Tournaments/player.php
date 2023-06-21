@@ -4,17 +4,29 @@ menu($data);
 
 $player = $data['data'];
 
+$firstName = $player['first_name'];
+$lastName = $player['last_name'];
+$age = $player['age'];
+$gender = $player['gender'];
+$genderView = ($gender === 'male') ? 'Hombre' : 'Mujer';
+$country = $player['country'];
+$slug = $player['slug'];
+
+$force = $player['skill']['force'];
+$speed = $player['skill']['speed'];
+$response = $player['skill']['response'];
+$luck = $player['skill']['luck'];
 ?>
 
 <section class="banner-section banner-section-two inner-banner-section bg-overlay-red bg_img" data-background="<?= base_url(); ?>/Assets/images/bg/bg-12.png">
     <div class="section-logo-text">
-        <span class="title">SWORD</span>
+        <span class="title">GEOPAGOS</span>
     </div>
     <div class="container-fluid">
         <div class="row justify-content-center align-items-end mb-30-none">
             <div class="col-xl-12 col-lg-12 text-center mb-30">
                 <div class="banner-content" data-aos="fade-up" data-aos-duration="1800">
-                    <h1 class="title">MASTER <span>SINGLE</span></h1>
+                    <h1 class="title">JUGADOR <span><?= $lastName; ?></span></h1>
                 </div>
             </div>
         </div>
@@ -29,23 +41,9 @@ $player = $data['data'];
     </nav>
 </div>
 
-<?php
-    $firstName = $player['first_name'];
-    $lastName = $player['last_name'];
-    $age = $player['age'];
-    $gender = $player['gender'];
-    $genderView = ($gender === 'male') ? 'Hombre' : 'Mujer';
-    $country = $player['country'];
-    $slug = $player['slug'];
-
-    $force = $player['skill']['energy'];
-    $speed = $player['skill']['speed'];
-    $response = $player['skill']['aim'];
-    $luck = $player['skill']['luck'];
-?>
 <section class="trainer-section trainer-details-section ptb-120">
     <div class="container">
-        <div class="row justify-content-center align-items-center mb-30-none">
+        <div class="row justify-content-center align-items-start mb-30-none">
             <div class="col-xl-6 col-lg-6 mb-30">
                 <div class="about-thumb">
                     <img src="<?= base_url(); ?>/Assets/images/trainer/player-<?= $gender; ?>.png" alt="about">

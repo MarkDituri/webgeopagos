@@ -83,9 +83,6 @@ $players = $data['data'];
 
             </div>
         </div>
-        <div class="load-more-btn text-center mt-40">
-            <a href="master.html"><img src="<?= base_url(); ?>/Assets/images/element/element-28.png" alt="element"></a>
-        </div>
     </div>
 </section>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
