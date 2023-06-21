@@ -1,6 +1,3 @@
-<?php
-// $classColor = $_SESSION['restaurante']['class_color'];
-?>
 <!-- jquery -->
 <script src="<?= base_url(); ?>/Assets/js/jquery.js"></script>
 <!-- bootstrap js -->

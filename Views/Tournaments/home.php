@@ -24,8 +24,8 @@ menu($data);
                                     <h3 class="inner-title">al torneo geopagos cup</h3>
                                     <p>Por Marcos E. Dituri</p>
                                     <div class="banner-btn">
-                                        <a href="apply.html" class="btn--base">Simular ahora <i class="fas fa-arrow-right ml-2"></i></a>
-                                        <a href="training.html" class="btn--base active">Ver jugadores <i class="fas fa-arrow-right ml-2"></i></a>
+                                        <a href="<?= base_url();?>/tournaments/cups" class="btn--base">Simular ahora <i class="fas fa-arrow-right ml-2"></i></a>
+                                        <a href="<?= base_url();?>/tournaments/players" class="btn--base active">Ver jugadores <i class="fas fa-arrow-right ml-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -36,13 +36,6 @@ menu($data);
         </div>
     </div>
 </section>
-
-<a href="#" class="scrollToTop">
-    <img src="<?= base_url(); ?>/Assets/images/element/top.png" alt="element">
-    <div class="scrollToTop-icon">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</a>
 
 <section class="service-section ptb-120">
     <div class="container">
@@ -60,36 +53,39 @@ menu($data);
                                         <img src="<?= base_url(); ?>/Assets/images/service/service-1.png" alt="service">
                                         <div class="service-overlay">
                                             <div class="service-overlay-content">
-                                                <h3 class="title"><a href="training-details.html">VER JUGADORES MASCULINOS</a></h3>
+                                                <h3 class="title"><a href="<?= base_url();?>/tournaments/players">VER JUGADORES</a></h3>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="service-item">
-                                    <div class="service-thumb">
-                                        <img src="<?= base_url(); ?>/Assets/images/service/service-2.png" alt="service">
-                                        <div class="service-overlay">
-                                            <div class="service-overlay-content">
-                                                <h3 class="title"><a href="training-details.html">VER JUGADORAS FEMENINAS</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="swiper-slide">
                                 <div class="service-item">
                                     <div class="service-thumb">
                                         <img src="<?= base_url(); ?>/Assets/images/service/service-3.png" alt="service">
                                         <div class="service-overlay">
                                             <div class="service-overlay-content">
-                                                <h3 class="title"><a href="training-details.html">SIMULAR UN TORNEO</a></h3>
+                                                <h3 class="title"><a href="<?= base_url();?>/tournaments/cups">SIMULAR UN TORNEO</a></h3>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="swiper-slide">
+                                <div class="service-item">
+                                    <div class="service-thumb">
+                                        <img src="<?= base_url(); ?>/Assets/images/service/service-2.png" alt="service">
+                                        <div class="service-overlay">
+                                            <div class="service-overlay-content">
+                                                <h3 class="title"><a href="training-details.html">VER REPOSITORIO GITHUB</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>

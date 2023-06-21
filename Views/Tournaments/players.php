@@ -22,7 +22,7 @@ $players = $data['data'];
 <div class="breadcrumb-area">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url();?>/tournaments/">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Jugadores</li>
         </ol>
     </nav>
@@ -85,9 +85,6 @@ $players = $data['data'];
         </div>
     </div>
 </section>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End Trainer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <?php
 footer($data);

@@ -1,12 +1,5 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-include 'Libraries/phpmailer/Exception.php';
-include 'Libraries/phpmailer/PHPMailer.php';
-include 'Libraries/phpmailer/SMTP.php';
-
 function host()
 {
     return $_SERVER["HTTP_HOST"];
@@ -17,19 +10,9 @@ function base_url()
     return BASE_URL;
 }
 
-function web_url()
+function base_api()
 {
-    return WEB_URL;
-}
-
-function mp_access_token()
-{
-    return MP_ACCESS_TOKEN;
-}
-
-function mp_public_key()
-{
-    return MP_PUBLIC_KEY;
+    return API_URL;
 }
 
 function media()
@@ -61,38 +44,12 @@ function footer($data = "")
     require_once($view_footer);
 }
 
-function loadingWeb()
-{
-    $view_loading = "Views/Template/Others/loading_web.php";
-    require_once($view_loading);
-}
-
 function dep($data)
 {
     $format  = print_r('<pre>');
     $format .= print_r($data);
     $format .= print_r('</pre>');
     return $format;
-}
-
-function getUsuario()
-{
-    require_once("Libraries/Core/Mysql.php");
-    $idRest = $_SESSION['idRest'];
-    $con = new Mysql();
-    $sql = "SELECT * FROM restaurantes WHERE id_restaurante = $idRest AND status = 2;";
-    $request = $con->select($sql);
-
-    return $request;
-}
-
-
-function sessionUser(int $id_restaurante)
-{
-    require_once("Models/LoginModel.php");
-    $objLogin = new LoginModel();
-    $request = $objLogin->sessionLogin($id_restaurante);
-    return $request;
 }
 
 function strClean($strCadena)
@@ -160,42 +117,6 @@ function Meses()
 }
 
 
-function getInfoPage(int $idpagina)
-{
-    require_once("Libraries/Core/Mysql.php");
-    $con = new Mysql();
-    $sql = "SELECT * FROM post WHERE idpost = $idpagina";
-    $request = $con->select($sql);
-    return $request;
-}
-
-function getPageRout(string $ruta)
-{
-    require_once("Libraries/Core/Mysql.php");
-    $con = new Mysql();
-    $sql = "SELECT * FROM post WHERE ruta = '$ruta' AND status != 0 ";
-    // $sql = "SELECT * FROM restaurantes WHERE id_restaurante = '$id_Rest' AND status != 0";
-    $request = $con->select($sql);
-    if (!empty($request)) {
-        $request['portada'] = $request['portada'] != "" ? base_url() . "/Assets/images/uploads/" . $request['portada'] : "";
-    }
-    return $request;
-}
-
-function viewPage(int $idpagina)
-{
-    require_once("Libraries/Core/Mysql.php");
-    $con = new Mysql();
-    $sql = "SELECT * FROM post WHERE idpost = $idpagina ";
-    $request = $con->select($sql);
-    if (($request['status'] == 2 and isset($_SESSION['permisosMod']) and $_SESSION['permisosMod']['u'] == true) or $request['status'] == 1) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
 function getHoy()
 {
     // $hoy = date('26/10/2022');
@@ -226,42 +147,4 @@ function getHoraDB()
     $hoyDB = date("H:i:s");
 
     return $hoyDB;
-}
-
-function getDatacreatedDB()
-{
-    $datecreated = getHoyDB() . ' ' . getHoraDB();
-    return $datecreated;
-}
-
-
-//Funciones
-function GenerarCodeIndex()
-{
-    $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
-    $ala_code = substr(str_shuffle($permitted_chars), 0, 5);
-
-    $time = time();
-    $more_code = date("is", $time);
-
-    $codeIndex = "$ala_code$more_code";
-
-    return $codeIndex;
-}
-
-function generarToken($longitud)
-{
-    if ($longitud < 4) {
-        $longitud = 4;
-    }
-
-    return bin2hex(random_bytes(($longitud - ($longitud % 2)) / 2));
-}
-
-function getPagina($position)
-{
-    $url = !empty($_GET['url']) ? $_GET['url'] : 'home/home';
-    $arrUrl = explode("/", $url);
-
-    return $arrUrl[$position];
 }

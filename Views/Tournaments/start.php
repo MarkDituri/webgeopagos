@@ -7,7 +7,7 @@ $tournament = $data['tournament'];
 $winnerCup = $data['winnerCup'];
 ?>
 
-<section class="banner-section banner-section-two inner-banner-section bg-overlay-red bg_img" data-background="<?= base_url(); ?>/Assets/images/bg/bg-12.png">
+<section class="banner-section banner-section-two inner-banner-section bg-overlay-red bg_img" data-background="<?= base_url(); ?>/Assets/images/event/event-bg-<?= $tournament[0]['gender'];?>.png">
     <div class="section-logo-text">
         <span class="title">GEOPAGOS</span>
     </div>
@@ -24,13 +24,11 @@ $winnerCup = $data['winnerCup'];
 <div class="breadcrumb-area">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url();?>/tournaments/">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Torneos</li>
         </ol>
     </nav>
 </div>
-
-
 
 <section class="event-section event-section-two ptb-20">
     <div class="container">

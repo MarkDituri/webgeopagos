@@ -1,12 +1,3 @@
-<?php
-// $dataRestaurante = $_SESSION['restaurante'];
-// $classColor =      $_SESSION['restaurante']['class_color'];
-?>
-<!-- preloader -->
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Preloader
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="preloader">
     <div class="">
         <div class="loader-thumb">

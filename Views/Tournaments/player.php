@@ -35,7 +35,7 @@ $luck = $player['skill']['luck'];
 <div class="breadcrumb-area">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="<?= base_url();?>/tournaments/">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Jugadores</li>
         </ol>
     </nav>
@@ -102,124 +102,6 @@ $luck = $player['skill']['luck'];
         </div>     
     </div>
 </section>
-
-<!-- <section class="trainer-section trainer-section--style trainer-section--style-two trainer-section--style-three ptb-120">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-8 text-center">
-                <div class="section-header">
-                    <h2 class="section-title">More Training <span>Masters</span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mb-10-none">
-            <div class="col-xl-12">
-                <div class="trainer-slider-two">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="trainer-item">
-                                <div class="trainer-thumb">
-                                    <img src="<?= base_url(); ?>/Assets/images/trainer/trainer-1.png" alt="trainer">
-                                    <div class="trainer-overlay">
-                                        <div class="share-area">
-                                            <div class="share-icon">
-                                                <i class="fas fa-share-alt"></i>
-                                            </div>
-                                            <ul class="social-list">
-                                                <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="trainer-content">
-                                    <h3 class="title"><a href="master-details.html">Randall Schwartz</a></h3>
-                                    <span class="sub-title">Women's Trainner</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="trainer-item">
-                                <div class="trainer-thumb">
-                                    <img src="<?= base_url(); ?>/Assets/images/trainer/trainer-2.png" alt="trainer">
-                                    <div class="trainer-overlay">
-                                        <div class="share-area">
-                                            <div class="share-icon">
-                                                <i class="fas fa-share-alt"></i>
-                                            </div>
-                                            <ul class="social-list">
-                                                <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="trainer-content">
-                                    <h3 class="title"><a href="master-details.html">Randall Schwartz</a></h3>
-                                    <span class="sub-title">Women's Trainner</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="trainer-item">
-                                <div class="trainer-thumb">
-                                    <img src="<?= base_url(); ?>/Assets/images/trainer/trainer-3.png" alt="trainer">
-                                    <div class="trainer-overlay">
-                                        <div class="share-area">
-                                            <div class="share-icon">
-                                                <i class="fas fa-share-alt"></i>
-                                            </div>
-                                            <ul class="social-list">
-                                                <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="trainer-content">
-                                    <h3 class="title"><a href="master-details.html">Randall Schwartz</a></h3>
-                                    <span class="sub-title">Women's Trainner</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="trainer-item">
-                                <div class="trainer-thumb">
-                                    <img src="<?= base_url(); ?>/Assets/images/trainer/trainer-4.png" alt="trainer">
-                                    <div class="trainer-overlay">
-                                        <div class="share-area">
-                                            <div class="share-icon">
-                                                <i class="fas fa-share-alt"></i>
-                                            </div>
-                                            <ul class="social-list">
-                                                <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="trainer-content">
-                                    <h3 class="title"><a href="master-details.html">Randall Schwartz</a></h3>
-                                    <span class="sub-title">Women's Trainner</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 
 <?php
 footer($data);

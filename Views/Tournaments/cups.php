@@ -5,7 +5,7 @@ menu($data);
 $cups = $data['data'];
 ?>
 
-<section class="banner-section banner-section-two inner-banner-section bg-overlay-red bg_img" data-background="<?= base_url(); ?>/Assets/images/bg/bg-12.png">
+<section class="banner-section banner-section-two inner-banner-section bg-overlay-red bg_img" data-background="<?= base_url(); ?>/Assets/images/bg/bg-cup.png">
     <div class="section-logo-text">
         <span class="title">GEOPAGOS</span>
     </div>
@@ -22,7 +22,7 @@ $cups = $data['data'];
 <div class="breadcrumb-area">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="<?= base_url();?>/tournaments/">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Torneos</li>
         </ol>
     </nav>
@@ -71,7 +71,7 @@ $cups = $data['data'];
                                 <h3 class="badge-title"><span><?= $day;?></span> <span class="month"><?= $mesAbreviado; ?></span></h3>
                             </div>
                         </div>
-                        <h3 class="title"><a href="event-details.html"><?= $name; ?></a></h3>
+                        <h3 class="title"><a href="<?= base_url();?>/tournaments"><?= $name; ?></a></h3>
                         <p><?= $description; ?></p>
                         <div class="btn btn--base mt-3">
                             <a href="<?= base_url();?>/tournaments/start/<?= $gender;?>">Simular torneo <i class="fas fa-arrow-right ml-2"></i></a>
