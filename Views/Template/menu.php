@@ -30,13 +30,13 @@
             <div class="container-fluid">
                 <div class="header-menu-content">
                     <nav class="navbar navbar-expand-xl p-0">
-                        <a class="site-logo site-title d-block d-xl-none" href="<?= base_url(); ?>/tournaments/"><img src="<?= base_url(); ?>/assets/images/logo-2.png" alt="site-logo"></a>
+                        <a class="site-logo site-title d-block d-xl-none" href="<?= base_url(); ?>/tournaments/"><img src="<?= base_url(); ?>/Assets/images/logo-2.png" alt="site-logo"></a>
                         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fas fa-bars"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu ml-auto mr-auto">
-                                <li><a class="site-logo site-title d-none d-xl-block" href="<?= base_url(); ?>/tournaments/"><img src="<?= base_url(); ?>/assets/images/logo-2.png" alt="site-logo"></a>
+                                <li><a class="site-logo site-title d-none d-xl-block" href="<?= base_url(); ?>/tournaments/"><img src="<?= base_url(); ?>/Assets/images/logo-2.png" alt="site-logo"></a>
                                 </li>
                                 <li class="menu_has_children">
                                     <a href="<?= base_url(); ?>/tournaments/">HOME</a>
