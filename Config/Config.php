@@ -10,8 +10,8 @@
 	const DB_CHARSET = "utf8";	
 
 	// PROD	
-	// const BASE_URL = "https://webgeopagos.qudimar.com/";
-	// const API_URL = "https://apigeopagos.qudimar.com/";
+	// const BASE_URL = "https://webgeopagos.qudimar.com";
+	// const API_URL = "https://apigeopagos.qudimar.com";
 	
 	// const DB_HOST = "";
 	// const DB_NAME = "";
