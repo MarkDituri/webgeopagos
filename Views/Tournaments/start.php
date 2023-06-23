@@ -5,6 +5,8 @@ menu($data);
 $playoffs = $data['playoff'];
 $tournament = $data['tournament'];
 $winnerCup = $data['winnerCup'];
+
+getModal('modalWinner', $data);
 ?>
 
 <section class="banner-section banner-section-two inner-banner-section bg-overlay-red bg_img" data-background="<?= base_url(); ?>/Assets/images/event/event-bg-<?= $tournament[0]['gender'];?>.png">

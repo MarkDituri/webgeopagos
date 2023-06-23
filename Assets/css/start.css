@@ -172,3 +172,19 @@
     height: 6px;
     background-color: #8f2df5;
 }
+
+.modal-open .modal{
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-open .modal h4{
+  font-size: 28px;
+  text-transform: none!important;
+}
+.modal-open .modal h3{
+  color: #8f2df5;
+  font-size: 40px;
+}

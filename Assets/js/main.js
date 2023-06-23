@@ -8,6 +8,11 @@
     }, 1000, function () {
         $(".preloader").css("display", "none");
     });
+
+    setTimeout(function() {
+      $('#modalWinner').modal('show');
+    }, 4000);
+        
   });
 
   $("select").niceSelect(),
@@ -598,3 +603,5 @@ function galleryMasonaryTwo(){
   
 
 })(jQuery);
+
+
